@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%),url('./Img/Cover\ Pic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.box {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box label {
+    position: relative;
+    width: 100%;
+    height: 33.333%;
+    border: 2px solid #555;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.box label input {
+    position: relative;
+    appearance: none;
+    z-index: 10;
+}
+
+.box label i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box label:nth-child(1) i {
+    background-image: url('./Img/01.jpg');
+    animation: animate 0.5s steps(3) infinite;
+}
+
+.box label:nth-child(2) i {
+    background-image: url('./Img/02.jpg');
+    animation: animate 0.4s steps(3) infinite;
+}
+
+.box label:nth-child(3) i {
+    background-image: url('./Img/03.jpg');
+    animation: animate 0.7s steps(3) infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 600px;
+    }
+}
+
+.box label input:checked~i {
+    animation-play-state: paused;
+}
+
+.reset {
+    margin-top: 40px;
+    border: none;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    background: #ef7500;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.reset:active {
+    background: #d63c3c;
+    transform: scale(0.95);
+}
