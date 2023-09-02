@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -104,4 +103,8 @@ h2 {
 .reset:active {
     background: #d63c3c;
     transform: scale(0.95);
+}
+
+@media screen and (max-width:357px) {
+    
 }
