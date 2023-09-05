@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%),url('./Img/Cover\ Pic.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%), url('./Img/Cover\ Pic.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,5 +106,28 @@ h2 {
 }
 
 @media screen and (max-width:357px) {
-    
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 357px;
+        height: auto;
+        border: 2px solid red;
+        padding: 20px;
+    }
+
+    .box label {
+        height: auto;
+    }
+
+    .box label i {
+        background-size: 100%;
+    }
+
+    .reset{
+        font-size: 1rem;
+    }
 }
